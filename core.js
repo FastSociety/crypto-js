@@ -232,7 +232,7 @@
 	                }
 	            } else {
 	                // Copy all words at once
-	                thisWords.push.apply(thisWords, thatWords);
+	                this.words = thisWords.concat(thatWords);
 	            }
 	            this.sigBytes += thatSigBytes;
 
